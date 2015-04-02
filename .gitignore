@@ -1,0 +1,7 @@
+# We ignore the *.css because this should be compiled by users
+*.css
+.DS_Store
+*.custom.*
+*.log
+*.map
+node_modules

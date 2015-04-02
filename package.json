@@ -1,0 +1,25 @@
+{
+  "name": "OBJECSS: Base",
+  "version": "0.1.0",
+  "description": "OBJECSS: Base element styling and reset",
+  "homepage": "http://objecss.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/objecss/objecss-base"
+  },
+  "bugs": {
+    "url": "https://github.com/objecss/objecss-base/issues"
+  },
+  "keywords": [
+    "objecss",
+    "base",
+    "css",
+    "oocss",
+    "sass",
+    "bem",
+    "responsive",
+    "framework"
+  ],
+  "author": "David Hund <@valuedstandards>",
+  "license": "MIT"
+}

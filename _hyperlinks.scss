@@ -1,0 +1,41 @@
+/**
+  * @name _hyperlinks.scss
+  * @description OBJECSS: Hyperlink element styles
+  *
+  * @version 0.1.0
+  * @author David Hund <@valuedstandards>
+  *
+  * @state :link - Default state.
+  * @state :visited - Visited before.
+  * @state :hover - Highlights when hovering.
+  * @state :focus - Highlights when focused.
+  * @state :active - Highlights when active.
+  */
+
+// text-decoration is already handled in _sanitize.scss
+
+a {
+  color: $cl-link;
+
+  // &:visited {
+  //   color: $cl-link;
+  // }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $cl-link-hover;
+  }
+
+  // TODO: Handle hyperlinks as direct children of Headings?
+  // .. we almost never need link-styles on 'em
+  // h1 &,
+  // h2 &,
+  // h3 &,
+  // h4 &,
+  // h5 &,
+  // h6 & {
+  //  text-decoration: none;
+  //  color: inherit;
+  // }
+}

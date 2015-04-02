@@ -1,0 +1,98 @@
+/**
+  * @name _type.scss
+  * @description OBJECSS: Typographic styles for base elements
+  *
+  * @version 0.1.0
+  * @author David Hund <@valuedstandards>
+  */
+
+// much is already handled in _sanitize.scss
+
+/**
+ * =1 Selection
+ */
+::selection {
+  @include contrasted($cl-text-select-background); // magically set background and color with OK contrast
+  // background-color: $cl-text-select-background;
+  // color: $cl-text-select;
+  text-shadow: none;
+}
+
+// Baseline bottom margin (vertical rythm)
+p,
+ul,
+ol,
+dl,
+table,
+blockquote,
+figure,
+figcaption,
+hr,
+pre {
+  @extend %mg-base-line;
+}
+
+/**
+ * = Lists
+ */
+ul,
+ol {
+  // padding-left: 0;
+  & ul,
+  & ol {
+    padding-left: 1em;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+code {
+  background-color: rgba($cl-text, .05);
+  color: rgba($cl-text, .65);
+  padding: .1em .33em;
+  @if $bd-radius != 0 {
+    border-radius: $bd-radius;
+  }
+}
+
+pre {
+  padding: 0 $base-line-rem;
+
+  & > code {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* = Headings
+ --------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+/* = SIMPLE TEXT HELPERS
+ --------------------------------------------------------------------------- */
+.intro {
+  font-weight: bold;
+
+  @include MQ(medium) {
+    font-size: 1.5em;
+    line-height: 2;
+    margin-top: $base-line-rem*2;
+  }
+}

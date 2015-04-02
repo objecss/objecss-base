@@ -1,0 +1,17 @@
+/**
+  * @name _document.scss
+  * @description OBJECSS: Document element styles
+  *
+  * @version 0.1.0
+  * @author David Hund <@valuedstandards>
+  */
+
+// Much is already handled in _sanitize.scss
+
+html {
+  // @include word-wrap;
+  color: $cl-text;
+  // font-size: $fs-base_pc * 1%;
+  // font-family: $ff-body;
+}
+
